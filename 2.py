@@ -34,3 +34,9 @@ playing_field = [
 
 electric_field_at_O = calculate_electric_field(playing_field)
 print(f"Electric field at point O: Ex = {electric_field_at_O[0]:.2e} N/C, Ey = {electric_field_at_O[1]:.2e} N/C")
+
+output_path = 'C:\\Users\\user\\OneDrive\\Desktop\\electric_field.txt'
+with open(output_path, 'w') as f:
+    f.write(f"Electric field at point O: Ex = {electric_field_at_O[0]:.2e} N/C, Ey = {electric_field_at_O[1]:.2e} N/C")
+
+print(f"{output_path}")

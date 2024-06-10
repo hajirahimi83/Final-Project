@@ -19,3 +19,9 @@ print(f"Number of turns in primary coil: {N_primary}")
 print(f"Number of turns in secondary coil: {N_secondary}")
 import math
 
+filename = "c:/Users/user/OneDrive/Desktop/New folder/output.txt"
+with open(filename, "w") as f:
+    f.write(f"Core cross-sectional area: {A_core} cm²\n")
+    f.write(f"Number of turns in primary coil: {N_primary}\n")
+    f.write(f"Number of turns in secondary coil: {N_secondary}\n")
+

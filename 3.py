@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
-image_path = 'C:\\Users\\Silver System\\Desktop\\Mobin\\test.png'
+image_path = 'C:\\Users\\user\\OneDrive\\Desktop\\test.png'
 image = np.array(Image.open(image_path).convert('L'))
 
 def convolve2d(image, kernel):
@@ -32,3 +32,8 @@ plt.subplot(1, 2, 2)
 plt.title('Edge Detection')
 plt.imshow(edges, cmap='gray')
 plt.show()
+
+
+output_path = 'C:\\Users\\user\\OneDrive\\Desktop\\New folder\\edges.png'
+Image.fromarray(edges.astype(np.uint8)).save(output_path)
+print(f"{output_path}")
